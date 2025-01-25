@@ -6,7 +6,8 @@ public class Bubble : MonoBehaviour {
     public LevelManager manager;
 
     void Awake() {
-        isSelectedBubble = false;       
+        isSelectedBubble = false;
+        GetComponent<MeshRenderer>().material.color = bubbleColor;
     }
 
     void OnCollisionEnter(Collision collision) {

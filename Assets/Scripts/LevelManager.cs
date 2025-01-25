@@ -93,6 +93,7 @@ public class LevelManager : MonoBehaviour {
         newBubble.transform.localScale = CalculateNewSize(bubble1Scale, bubble2Scale);
         newBubble.GetComponent<Bubble>().isSelectedBubble = true;
         newBubble.GetComponent<Bubble>().manager = this;
+        newBubble.GetComponent<MeshRenderer>().material.color = CalculateNewColor(bubble1Color, bubble2Color);
         bubbles.Add(newBubble);
         selectedObject = newBubble;
         Debug.Log("Created a new bubble");
