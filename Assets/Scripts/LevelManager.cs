@@ -1,8 +1,10 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
     private GameObject selectedObject;
+    public GameObject targetBubble;
     public GameObject bubblePrefab;
     public List<GameObject> bubbles;
     public AudioClip[] poppingSounds;
@@ -11,6 +13,7 @@ public class LevelManager : MonoBehaviour {
     private float smoothSpeed = 11f; // Adjust this for smoother/slower following
 
     void Update() {
+        CheckForSuccess();
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("mouse button down");
@@ -18,8 +21,7 @@ public class LevelManager : MonoBehaviour {
             {
                 Debug.Log("selected obj null");
                 RaycastHit hit;
-                int bubbleLayer = LayerMask.GetMask("BubbleLayer");
-                Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, bubbleLayer);
+                Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity);
 
                 if (hit.collider != null)
                 {
@@ -68,6 +70,7 @@ public class LevelManager : MonoBehaviour {
             selectedObject.transform.position = Vector3.Lerp(selectedObject.transform.position, targetPosition, Time.deltaTime * smoothSpeed);
         }
     }
+
     private void EnableParticleEffect(GameObject bubble, bool enable)
     {
         // Get the ParticleSystem component from the child object
@@ -130,10 +133,23 @@ public class LevelManager : MonoBehaviour {
     }
 
     private Color CalculateNewColor(Color color1, Color color2) {
+        if ((color1.CompareRGB(new Color(1,1,0,1)) && color2.CompareRGB(Color.blue)) || (color1.CompareRGB(Color.blue) && color2.CompareRGB(new Color(1, 1, 0, 1)))) {
+            return Color.green;
+        }
         return new Color((color1.r+color2.r) / 2, (color1.g + color2.g) / 2, (color1.b + color2.b) / 2, 1);
     }
 
     private Vector3 CalculateNewSize(Vector3 scale1, Vector3 scale2) {
         return new Vector3(scale1.x + scale2.x, scale1.y + scale2.y, scale1.z + scale2.z);
+    }
+
+    private void CheckForSuccess() {
+        if (bubbles.Count != 1) {
+            return;
+        }
+        if (bubbles[0].GetComponent<Bubble>().bubbleColor == targetBubble.GetComponent<Bubble>().bubbleColor) {
+            Debug.Log("Congratulations, it's a match!");
+            //Add UI message + level change here
+        }
     }
 }
