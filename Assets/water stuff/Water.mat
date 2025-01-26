@@ -14,7 +14,7 @@ Material:
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -46,18 +46,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Foam_Distance: 0.52
-    - _Metallic: 0
-    - _Noise_scale: 0.01
+    - _Foam_Distance: 2
+    - _Metallic: 0.263
+    - _Noise_scale: 0.538
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Refraction: 0.05
-    - _Smoothness: 0.96
-    - _Transparency: 0.4
-    - _Wave_speed: 0.01
+    - _Refraction: 0.0584
+    - _Smoothness: 0.927
+    - _Transparency: 0.639
+    - _Wave_speed: 0.00359
     m_Colors:
-    - _Foam_Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Water_color: {r: 0.051383495, g: 0.57254905, b: 1, a: 0.6862745}
+    - _Foam_Color: {r: 0.80754715, g: 0.9372483, b: 1, a: 1}
+    - _Water_color: {r: 0, g: 0.54736847, b: 1, a: 0.7294118}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4523601098736461970

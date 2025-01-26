@@ -10,6 +10,11 @@ public class Bubble : MonoBehaviour {
         GetComponent<MeshRenderer>().material.color = bubbleColor;
     }
 
+    private void Update()
+    {
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+    }
+
     void OnCollisionEnter(Collision collision) {
         if (!collision.gameObject.CompareTag("bubble")) {
             Debug.Log("collided with something other than a bubble");

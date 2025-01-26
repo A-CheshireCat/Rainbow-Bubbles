@@ -1,56 +1,81 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class LevelManager : MonoBehaviour {
     private GameObject selectedObject;
     public GameObject bubblePrefab;
     public List<GameObject> bubbles;
 
+    [SerializeField]
+    private float smoothSpeed = 11f; // Adjust this for smoother/slower following
+
     void Update() {
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0))
+        {
             Debug.Log("mouse button down");
-            if (selectedObject == null) {
+            if (selectedObject == null)
+            {
                 Debug.Log("selected obj null");
                 RaycastHit hit;
-                Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit);
+                int bubbleLayer = LayerMask.GetMask("BubbleLayer");
+                Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, bubbleLayer);
 
-                if (hit.collider != null) {
+                if (hit.collider != null)
+                {
                     Debug.Log("hit collider not null");
-                    if (!hit.collider.CompareTag("bubble")) {
+                    if (!hit.collider.CompareTag("bubble"))
+                    {
                         Debug.Log("tag not bubble");
                         return;
                     }
                     Debug.Log("tag is bubble");
                     selectedObject = hit.collider.gameObject;
-                    foreach (var bubble in bubbles) {
-                        if (bubble.name == selectedObject.name) {
+                    foreach (var bubble in bubbles)
+                    {
+                        if (bubble.name == selectedObject.name)
+                        {
                             bubble.GetComponent<Bubble>().isSelectedBubble = true;
+                            EnableParticleEffect(bubble, true); // Enable particle effect
                         }
                     }
                     Cursor.visible = false;
                 }
             }
         }
-            
-        if (Input.GetMouseButtonDown(1)) {
+
+        if (Input.GetMouseButtonDown(1))
+        {
             Cursor.visible = true;
-                foreach (var bubble in bubbles) {
-                    if (bubble.name == selectedObject.name) {
-                        bubble.GetComponent<Bubble>().isSelectedBubble = false;
-                    }
+            foreach (var bubble in bubbles)
+            {
+                if (bubble.name == selectedObject.name)
+                {
+                    bubble.GetComponent<Bubble>().isSelectedBubble = false;
+                    EnableParticleEffect(bubble, false); // Disable particle effect
                 }
+            }
             selectedObject = null;
         }
 
-        if (selectedObject != null) {
-                Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
-                Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-                selectedObject.transform.position = new Vector3(worldPosition.x, selectedObject.transform.position.y, worldPosition.z);
-            }
-        
+        if (selectedObject != null)
+        {
+            Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+            // Smoothly interpolate the bubble's position towards the target position
+            Vector3 targetPosition = new Vector3(worldPosition.x, selectedObject.transform.position.y, worldPosition.z);
+            selectedObject.transform.position = Vector3.Lerp(selectedObject.transform.position, targetPosition, Time.deltaTime * smoothSpeed);
+        }
+    }
+    private void EnableParticleEffect(GameObject bubble, bool enable)
+    {
+        // Get the ParticleSystem component from the child object
+        ParticleSystem particleSystem = bubble.GetComponentInChildren<ParticleSystem>();
+        if (particleSystem != null)
+        {
+            var emission = particleSystem.emission;
+            emission.rateOverTime = enable ? 9 : 0; // Set emission rate
+        }
     }
 
     public void MergingBubbles(GameObject bubble1, GameObject bubble2) {
@@ -96,6 +121,7 @@ public class LevelManager : MonoBehaviour {
         newBubble.GetComponent<MeshRenderer>().material.color = CalculateNewColor(bubble1Color, bubble2Color);
         bubbles.Add(newBubble);
         selectedObject = newBubble;
+        EnableParticleEffect(newBubble, true); // enable particle of new bubble
         Debug.Log("Created a new bubble");
     }
 
