@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour {
 
     private void Awake() {
         nextLevelButton.gameObject.SetActive(false);
+        Cursor.visible = true;
     }
 
     private void Update() {
