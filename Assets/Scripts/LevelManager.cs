@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
     private GameObject selectedObject;
     public GameObject targetBubble;
+    public Button nextLevelButton;
     public GameObject bubblePrefab;
     public List<GameObject> bubbles;
     public AudioClip[] poppingSounds;
@@ -13,7 +17,11 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     private float smoothSpeed = 11f; // Adjust this for smoother/slower following
 
-    void Update() {
+    private void Awake() {
+        nextLevelButton.gameObject.SetActive(false);
+    }
+
+    private void Update() {
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("mouse button down");
@@ -148,13 +156,13 @@ public class LevelManager : MonoBehaviour {
     private void CheckForSuccess(GameObject latestBubble) {
         if (latestBubble.GetComponent<Bubble>().bubbleColor == targetBubble.GetComponent<Bubble>().bubbleColor) {
             Debug.Log("Congratulations, it's a match!");
-            //Add UI message + level change here
-            //SceneManager.LoadScene("nextlevel");
+            
+            nextLevelButton.gameObject.SetActive(true);
         }
     }
 
     //Put on the reset button
     public void Reset() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(gameObject.scene.name);
     }
 }
