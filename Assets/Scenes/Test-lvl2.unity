@@ -1501,6 +1501,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 48c237b508954c640981756d977305dc, type: 2}
+    - target: {fileID: 2929530412314057761, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3220421127842123672, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
       propertyPath: bubbleColor.b
       value: 0.5
