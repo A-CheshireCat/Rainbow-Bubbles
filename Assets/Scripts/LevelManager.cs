@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
     private GameObject selectedObject;
@@ -151,5 +152,10 @@ public class LevelManager : MonoBehaviour {
             Debug.Log("Congratulations, it's a match!");
             //Add UI message + level change here
         }
+    }
+
+    //Put on the reset button
+    public void Reset() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
