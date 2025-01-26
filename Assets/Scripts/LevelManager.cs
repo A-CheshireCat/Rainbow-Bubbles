@@ -14,7 +14,6 @@ public class LevelManager : MonoBehaviour {
     private float smoothSpeed = 11f; // Adjust this for smoother/slower following
 
     void Update() {
-        CheckForSuccess();
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("mouse button down");
@@ -131,6 +130,8 @@ public class LevelManager : MonoBehaviour {
         selectedObject = newBubble;
         EnableParticleEffect(newBubble, true); // enable particle of new bubble
         Debug.Log("Created a new bubble");
+
+        CheckForSuccess(newBubble);
     }
 
     private Color CalculateNewColor(Color color1, Color color2) {
@@ -144,13 +145,11 @@ public class LevelManager : MonoBehaviour {
         return new Vector3(scale1.x + scale2.x, scale1.y + scale2.y, scale1.z + scale2.z);
     }
 
-    private void CheckForSuccess() {
-        if (bubbles.Count != 1) {
-            return;
-        }
-        if (bubbles[0].GetComponent<Bubble>().bubbleColor == targetBubble.GetComponent<Bubble>().bubbleColor) {
+    private void CheckForSuccess(GameObject latestBubble) {
+        if (latestBubble.GetComponent<Bubble>().bubbleColor == targetBubble.GetComponent<Bubble>().bubbleColor) {
             Debug.Log("Congratulations, it's a match!");
             //Add UI message + level change here
+            //SceneManager.LoadScene("nextlevel");
         }
     }
 
