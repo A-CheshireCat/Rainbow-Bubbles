@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour {
                 Debug.Log("selected obj null");
                 RaycastHit hit;
                 int bubbleLayer = LayerMask.GetMask("BubbleLayer");
-                Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, bubbleLayer);
+                Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity ); //,bubbleLayer
 
                 if (hit.collider != null)
                 {
