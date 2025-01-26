@@ -5,6 +5,7 @@ public class LevelManager : MonoBehaviour {
     private GameObject selectedObject;
     public GameObject bubblePrefab;
     public List<GameObject> bubbles;
+    public AudioClip[] poppingSounds;
 
     [SerializeField]
     private float smoothSpeed = 11f; // Adjust this for smoother/slower following
@@ -80,6 +81,8 @@ public class LevelManager : MonoBehaviour {
 
     public void MergingBubbles(GameObject bubble1, GameObject bubble2) {
         Debug.Log("MergingBubbles() start");
+        GetComponent<AudioSource>().PlayOneShot(poppingSounds[Random.Range(0, poppingSounds.Length-1)]);
+
         Color bubble1Color = new Color(1, 1, 1);
         Color bubble2Color = new Color(1, 1, 1);
         Vector3 bubble1Scale = new Vector3(0, 0, 0);
@@ -118,7 +121,7 @@ public class LevelManager : MonoBehaviour {
         newBubble.transform.localScale = CalculateNewSize(bubble1Scale, bubble2Scale);
         newBubble.GetComponent<Bubble>().isSelectedBubble = true;
         newBubble.GetComponent<Bubble>().manager = this;
-        newBubble.GetComponent<MeshRenderer>().material.color = CalculateNewColor(bubble1Color, bubble2Color);
+        newBubble.GetComponent<MeshRenderer>().material.SetColor("_Water_Color", CalculateNewColor(bubble1Color, bubble2Color));
         bubbles.Add(newBubble);
         selectedObject = newBubble;
         EnableParticleEffect(newBubble, true); // enable particle of new bubble
