@@ -526,6 +526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble -blu
       objectReference: {fileID: 0}
+    - target: {fileID: 757231467926093787, guid: 8830544bd39fc4b4497210c1a2dc093e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2722185385298655992, guid: 8830544bd39fc4b4497210c1a2dc093e, type: 3}
       propertyPath: manager
       value: 
@@ -1352,6 +1356,7 @@ MonoBehaviour:
   - {fileID: 1906709789}
   - {fileID: 1896574407}
   - {fileID: 457080380}
+  poppingSounds: []
   smoothSpeed: 5
 --- !u!1001 &2141681986
 PrefabInstance:

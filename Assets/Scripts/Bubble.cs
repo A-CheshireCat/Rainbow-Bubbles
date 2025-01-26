@@ -7,7 +7,8 @@ public class Bubble : MonoBehaviour {
 
     void Awake() {
         isSelectedBubble = false;
-        GetComponent<MeshRenderer>().material.SetColor("_Water_Color", bubbleColor);
+        //GetComponent<MeshRenderer>().material.SetColor("_Water_Color", bubbleColor);
+        GetComponent<MeshRenderer>().material.color = bubbleColor;
     }
 
     private void Update()

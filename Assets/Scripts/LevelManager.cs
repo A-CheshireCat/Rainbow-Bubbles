@@ -121,7 +121,8 @@ public class LevelManager : MonoBehaviour {
         newBubble.transform.localScale = CalculateNewSize(bubble1Scale, bubble2Scale);
         newBubble.GetComponent<Bubble>().isSelectedBubble = true;
         newBubble.GetComponent<Bubble>().manager = this;
-        newBubble.GetComponent<MeshRenderer>().material.SetColor("_Water_Color", CalculateNewColor(bubble1Color, bubble2Color));
+        //newBubble.GetComponent<MeshRenderer>().material.SetColor("_Water_Color", CalculateNewColor(bubble1Color, bubble2Color));
+        newBubble.GetComponent<MeshRenderer>().material.color = CalculateNewColor(bubble1Color, bubble2Color);
         bubbles.Add(newBubble);
         selectedObject = newBubble;
         EnableParticleEffect(newBubble, true); // enable particle of new bubble
