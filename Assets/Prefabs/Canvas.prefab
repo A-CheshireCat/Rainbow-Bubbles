@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -69, y: 83}
+  m_AnchoredPosition: {x: -69, y: 64.400024}
   m_SizeDelta: {x: 84, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8778229255753841187
@@ -758,7 +758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -69, y: 448.4}
+  m_AnchoredPosition: {x: -69, y: 429.80002}
   m_SizeDelta: {x: 84, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8906880602169543729
@@ -1252,7 +1252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -69, y: 170}
+  m_AnchoredPosition: {x: -69, y: 151.40002}
   m_SizeDelta: {x: 84, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8974960254263892027
@@ -1401,7 +1401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -69, y: 354.8}
+  m_AnchoredPosition: {x: -69, y: 336.2}
   m_SizeDelta: {x: 84, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9144610008781121116
@@ -1550,7 +1550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -69, y: 261.1}
+  m_AnchoredPosition: {x: -69, y: 242.50003}
   m_SizeDelta: {x: 84, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3642260155805180023
@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 5438383299161928704}
   - component: {fileID: 5753212661776199012}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: Text (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2017,15 +2017,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: faa32f9449aa7594ba5b0847fc579aa9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -644.83
+      value: -644.65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: faa32f9449aa7594ba5b0847fc579aa9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -357.87
+      value: -357.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: faa32f9449aa7594ba5b0847fc579aa9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.94
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: faa32f9449aa7594ba5b0847fc579aa9, type: 3}
       propertyPath: m_LocalRotation.w
