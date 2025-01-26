@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22636874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3260586417346070868, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
+  m_PrefabInstance: {fileID: 1233060785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &230149234 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2625891158232290275, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
@@ -771,13 +776,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2635609510395757164, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
+      propertyPath: creditsUi
+      value: 
+      objectReference: {fileID: 22636874}
     - target: {fileID: 2929530412314057761, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3825850334131519315, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4894640132516696724, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142857926711318130, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6609058974363305525, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
       propertyPath: m_IsActive

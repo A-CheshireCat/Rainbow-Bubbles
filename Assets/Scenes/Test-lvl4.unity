@@ -1859,6 +1859,10 @@ PrefabInstance:
       propertyPath: bubbleColor.r
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3825850334131519315, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5142857926711318130, guid: b82fdcbe94b8eb944a762ca4e92a8249, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 4
