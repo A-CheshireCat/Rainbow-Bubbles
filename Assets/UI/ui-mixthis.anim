@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -0.18, y: 8.19, z: 3.79}
+        value: {x: -0.24, y: 0.62786865, z: -2.92}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -29,25 +29,16 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.6666667
-        value: {x: -0.25, y: 11.05, z: 3.35}
-        inSlope: {x: -0.16799998, y: 2.3340003, z: 0}
-        outSlope: {x: -0.16799998, y: 2.3340003, z: 0}
+        value: {x: -0.41, y: 0.39, z: -3.97}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
-        weightedMode: 3
+        weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.6666666
-        value: {x: -5.28, y: 12.08, z: 3.48}
-        inSlope: {x: -2.4851055, y: 0, z: 0}
-        outSlope: {x: -2.4851055, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 3.0166667
-        value: {x: -6.74, y: 8.47, z: 1.32}
+        time: 1.1666666
+        value: {x: -0.33, y: 0.39, z: -3.47}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -57,14 +48,14 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.49534363, y: 0.49534363, z: 0.49534363}
+        value: {x: 0.17965621, y: 0.17965622, z: 0.1796562}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -73,7 +64,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.6666667
-        value: {x: 5.080481, y: 5.080481, z: 5.080481}
+        value: {x: 1.8410071, y: 1.8410072, z: 1.8410072}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -81,17 +72,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1
-        value: {x: 1.5189207, y: 1.5189207, z: 1.5189207}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 3.0166667
-        value: {x: 2.7789872, y: 2.7789872, z: 2.7789872}
+        time: 1.1666666
+        value: {x: 0.9272608, y: 0.9272609, z: 0.9272609}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -101,7 +83,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
   m_FloatCurves:
   - serializedVersion: 2
     curve:
@@ -211,7 +193,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3770289040
+      path: 2278641593
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -220,7 +202,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3770289040
+      path: 2278641593
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -382,7 +364,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -0.18
+        value: -0.24
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -391,25 +373,16 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: -0.25
-        inSlope: -0.16799998
-        outSlope: -0.16799998
+        value: -0.41
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
-        weightedMode: 3
+        weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.6666666
-        value: -5.28
-        inSlope: -2.4851055
-        outSlope: -2.4851055
-        tangentMode: 136
-        weightedMode: 3
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 3.0166667
-        value: -6.74
+        time: 1.1666666
+        value: -0.33
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -420,7 +393,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -430,7 +403,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 8.19
+        value: 0.62786865
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -439,25 +412,16 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: 11.05
-        inSlope: 2.3340003
-        outSlope: 2.3340003
-        tangentMode: 136
-        weightedMode: 3
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.6666666
-        value: 12.08
+        value: 0.39
         inSlope: 0
         outSlope: 0
         tangentMode: 136
-        weightedMode: 3
+        weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.0166667
-        value: 8.47
+        time: 1.1666666
+        value: 0.39
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -468,7 +432,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -478,7 +442,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 3.79
+        value: -2.92
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -487,25 +451,16 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: 3.35
+        value: -3.97
         inSlope: 0
         outSlope: 0
         tangentMode: 136
-        weightedMode: 3
+        weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.6666666
-        value: 3.48
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 3
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 3.0166667
-        value: 1.32
+        time: 1.1666666
+        value: -3.47
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -516,7 +471,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -526,7 +481,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.49534363
+        value: 0.17965621
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -535,7 +490,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: 5.080481
+        value: 1.8410071
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -543,17 +498,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
-        value: 1.5189207
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 3.0166667
-        value: 2.7789872
+        time: 1.1666666
+        value: 0.9272608
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -564,7 +510,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -574,7 +520,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.49534363
+        value: 0.17965622
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -583,7 +529,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: 5.080481
+        value: 1.8410072
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -591,17 +537,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
-        value: 1.5189207
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 3.0166667
-        value: 2.7789872
+        time: 1.1666666
+        value: 0.9272609
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -612,7 +549,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -622,7 +559,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.49534363
+        value: 0.1796562
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -631,7 +568,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.6666667
-        value: 5.080481
+        value: 1.8410072
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -639,17 +576,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
-        value: 1.5189207
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 3.0166667
-        value: 2.7789872
+        time: 1.1666666
+        value: 0.9272609
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -660,7 +588,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: Frog_paper/Sphere-mixthis
+    path: broascaultimate/Sphere-mixthis
     classID: 4
     script: {fileID: 0}
     flags: 0
